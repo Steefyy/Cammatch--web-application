@@ -10,7 +10,6 @@
 <div th:replace="~{fragments :: nav}"></div>
 <main class="container section">
     <h1>Camere favorite</h1>
-    <p class="muted">Lista este inspirata din varianta Flask si este integrata in proiectul final Spring Boot.</p>
     <p th:if="${favorites.isEmpty()}" class="card">Nu ai camere favorite.</p>
     <div class="grid cards-3">
         <article class="card" th:each="favorite : ${favorites}">
